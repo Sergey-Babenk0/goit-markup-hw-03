@@ -19,7 +19,14 @@ body {
   margin: 0%;
   font-family: Roboto, Raleway, sans-serif;
   color: var(--main-text-color);
-  width: 1600px;
+}
+
+.container {
+  padding-left: 215px;
+  padding-right: 215px;
+  width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Цвета верхней части страницы */
@@ -28,10 +35,6 @@ body {
 }
 /* logo */
 .logo {
-  margin-left: 13.45%;
-  margin-top: 1.5%;
-  margin-bottom: 1.5629%;
-  min-width: 9.064%;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -55,33 +58,30 @@ body {
 
 /* навигационные ссылки */
 .navigation {
+  margin-left: 215px;
+  width: 1200px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .links {
   display: flex;
   padding-left: 0;
+  justify-content: space-between;
   margin: 0%;
   list-style: none;
 }
 
-.links:nth-child(2n + 1) {
-  margin-left: 19.6%;
-  min-width: 20.7%;
-}
-
-.links:nth-child(2n) {
-  margin-left: 5.82%;
-  min-width: 18.4%;
-}
-
 .links > li {
-  margin-right: 17%;
+  margin-right: 50px;
 }
 
 .links > li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .navigation-links {
@@ -92,7 +92,6 @@ body {
   text-decoration: none;
   color: var(--main-text-color);
 }
-
 /* ссылки с телефоном и почтой */
 .adresses-links {
   font-weight: 500;
@@ -120,32 +119,38 @@ body {
 
 /* Оформление секции "Герой" */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: var(--dark-background-color);
-  min-height: 600px;
+}
+
+.hero > .container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* Текст заголовка */
 .hero-title {
-  padding-top: 12.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   color: #ffffff;
 }
 
 /* Оформление кнопки героя */
 .hero-button {
-  display: block;
-  padding: 0;
-  border: 0;
-  margin-top: 1.9%;
-  min-width: 12.5%;
-  height: 50px;
-  border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+  display: block;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
   cursor: pointer;
   font-family: 'Roboto';
   font-style: normal;
@@ -159,9 +164,8 @@ body {
 /* Наши преимущества */
 .benefits-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0;
-  margin-top: 5.875%;
   margin-bottom: 0%;
   list-style: none;
 }
@@ -187,31 +191,29 @@ body {
 /* Чем мы занимаемся */
 
 .do-title {
-  margin-top: 5.875%;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 .do-list {
+  margin-top: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0;
-  margin-top: 3.125%;
   margin-bottom: 0;
   list-style: none;
 }
-
-.do-list > li {
-  margin-right: 1.875%;
-}
-
 .do-list > li:last-child {
   margin-right: 0;
+}
+
+.do > .container {
+  padding-top: 0;
 }
 /* Наши сотрудники */
 
@@ -219,29 +221,26 @@ body {
   background-color: #f5f4fa;
 }
 .team-title {
-  padding-top: 5.875%;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 .team-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
-  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
   padding: 0;
-  margin-top: 3.125%;
-  padding-bottom: 5.875%;
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-list > li {
-  margin-right: 1.875%;
   background-color: var(--light-background-color);
   border-radius: 0px 0px 4px 4px;
 }
@@ -274,7 +273,6 @@ body {
 
 /* Адресы в футере */
 .adress {
-  margin-left: 13.45%;
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -284,16 +282,12 @@ body {
 
 /* Оформление футера */
 .footer {
-  padding-top: 3.75%;
-  padding-bottom: 3.75%;
   background-color: var(--dark-background-color);
 }
 
 .footer-logo {
+  margin-bottom: 20px;
   display: inline-block;
-  margin-bottom: 1.25%;
-  margin-left: 13.45%;
-  min-width: 9.064%;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -305,8 +299,11 @@ body {
 .bottom-links {
   padding-left: 0;
   margin: 0%;
-  margin-left: 13.45%;
   list-style: none;
+}
+
+.bottom-links > li {
+  margin-top: 9px;
 }
 /* Оформление цвета ссылок */
 .footer-links {
@@ -327,8 +324,8 @@ body {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 495px;
   display: flex;
+  justify-content: center;
   list-style: none;
 }
 
@@ -339,6 +336,7 @@ body {
 .portfolio-links > li:last-child {
   margin-right: 0;
 }
+
 .button {
   border-radius: 4px;
   border: 0;
@@ -364,11 +362,10 @@ body {
 .works {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-left: 0;
   margin: 0%;
   margin-top: 50px;
-  margin-left: 215px;
-  margin-bottom: 94px;
   list-style: none;
 }
 
@@ -408,3 +405,5 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+/*СТУДИЯ*/
