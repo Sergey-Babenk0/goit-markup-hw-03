@@ -22,19 +22,20 @@ body {
 }
 
 .container {
-  padding-left: 215px;
-  padding-right: 215px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin: 0 auto;
 }
 
 /* Цвета верхней части страницы */
 .head {
+  margin: 0 auto;
   background-color: var(--light-background-color);
 }
 /* logo */
 .logo {
+  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -58,14 +59,19 @@ body {
 
 /* навигационные ссылки */
 .navigation {
-  margin-left: 215px;
-  width: 1200px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+
+.navigation > ul {
+  margin-right: 331px;
+}
+
+.navigation > ul:last-child {
+  margin-right: 0;
 }
 
 .links {
@@ -162,6 +168,9 @@ body {
 }
 
 /* Наши преимущества */
+.benefits {
+  padding-top: 94px;
+}
 .benefits-list {
   display: flex;
   justify-content: space-between;
@@ -189,6 +198,9 @@ body {
   color: #757575;
 }
 /* Чем мы занимаемся */
+.do {
+  padding-top: 94px;
+}
 
 .do-title {
   text-align: center;
@@ -218,6 +230,8 @@ body {
 /* Наши сотрудники */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 .team-title {
