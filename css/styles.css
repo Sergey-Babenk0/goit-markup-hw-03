@@ -31,6 +31,7 @@ body {
 /* Цвета верхней части страницы */
 .head {
   margin: 0 auto;
+  border-bottom: 1px solid #ececec;
   background-color: var(--light-background-color);
 }
 /* logo */
@@ -63,7 +64,6 @@ body {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
 
 .navigation > ul {
@@ -145,6 +145,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   color: #ffffff;
 }
 
@@ -175,10 +176,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 0%;
   list-style: none;
 }
 .benefits-title {
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -200,6 +201,7 @@ body {
 /* Чем мы занимаемся */
 .do {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .do-title {
@@ -264,7 +266,6 @@ body {
 }
 
 .team-worker {
-  padding-top: 30px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -276,13 +277,22 @@ body {
 
 .team-profession {
   padding-top: 10px;
-  padding-bottom: 30px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.empl-name {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.works-text {
+  border: 1px solid #eeeeee;
+  padding: 24px 20px;
 }
 
 /* Адресы в футере */
@@ -296,6 +306,8 @@ body {
 
 /* Оформление футера */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 
