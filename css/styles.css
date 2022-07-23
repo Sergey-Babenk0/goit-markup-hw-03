@@ -34,6 +34,11 @@ body {
   border-bottom: 1px solid #ececec;
   background-color: var(--light-background-color);
 }
+
+.contacts-container {
+  display: flex;
+  align-items: center;
+}
 /* logo */
 .logo {
   margin-right: 93px;
@@ -77,8 +82,8 @@ body {
 .links {
   display: flex;
   padding-left: 0;
-  justify-content: space-between;
   margin: 0%;
+  margin-left: auto;
   list-style: none;
 }
 
@@ -174,6 +179,7 @@ body {
 }
 .benefits-list {
   display: flex;
+  margin: 0;
   justify-content: space-between;
   padding: 0;
   list-style: none;
@@ -286,8 +292,8 @@ body {
 }
 
 .empl-name {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .works-text {
@@ -337,6 +343,7 @@ body {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  line-height: 24px;
 }
 
 .footer-links:hover,
